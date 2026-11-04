@@ -1,0 +1,15 @@
+.venv/
+.cache/
+tmp/
+downloads/
+data/
+__pycache__/
+*.pyc
+.DS_Store
+runs/*/checkpoints/
+runs/*/results/
+runs/*/test_results/
+# Published evidence is explicitly retained; new runs remain local by default.
+runs/*
+!runs/pilot-01/
+!runs/pilot-02/

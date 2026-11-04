@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "mse": 0.3841443955898285,
+  "mae": 0.40471312403678894,
+  "predictions_sha256": "c19340332d4024d52c7cdc7fbb7f8ec1d40c2ffdfc720de23b5590f15d38fded",
+  "source_integrity": "PASS",
+  "all_test_windows_evaluated": true,
+  "description": "Fresh publication working copy, separate recreated venv, downloaded official data checked against existing manifest; unchanged predictions."
+}

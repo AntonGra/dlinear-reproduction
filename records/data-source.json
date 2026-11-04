@@ -1,0 +1,25 @@
+{
+  "downloaded_at_utc": "2026-11-04T20:38:23.819865+00:00",
+  "repository": "https://github.com/zhouhaoyi/ETDataset",
+  "commit": "1d16c8f4f943005d613b5bc962e9eeb06058cf07",
+  "files": [
+    {
+      "path": "data/ETTh1.csv",
+      "url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTh1.csv",
+      "sha256": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066",
+      "bytes": 2589657
+    },
+    {
+      "path": "data/ETT_LICENSE",
+      "url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/LICENSE",
+      "sha256": "83cbb5c31415b1d0ee1d20d35dae3fda3a045b85fae9364cc57facc9cd6e0946",
+      "bytes": 17818
+    },
+    {
+      "path": "data/ETT_README.md",
+      "url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/README.md",
+      "sha256": "c1dfee894da23fec609fb6770d4fdfd8497970e1b88fcf72b3922f93a7cd706c",
+      "bytes": 5398
+    }
+  ]
+}

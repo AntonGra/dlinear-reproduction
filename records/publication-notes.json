@@ -1,0 +1,14 @@
+{
+  "path_redaction": "Original absolute project root replaced by ${PROJECT_ROOT} in published pilot logs and metadata. Numerical results and source/data hashes unchanged.",
+  "omitted_artifacts": [
+    "local environment",
+    "downloaded wheels",
+    "CSV data",
+    "checkpoints",
+    "prediction arrays",
+    "generated PDFs"
+  ],
+  "source_mode": "pinned git submodule",
+  "upstream_commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+  "text_formatting": "Trailing whitespace and final empty lines trimmed in published result.txt only."
+}

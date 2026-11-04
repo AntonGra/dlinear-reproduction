@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "same_seed": 2021,
+  "runs": [
+    "pilot-01",
+    "pilot-02"
+  ],
+  "checks": {
+    "mse": true,
+    "mae": true,
+    "predictions_sha256": true,
+    "epochs_completed": true,
+    "best_validation_epoch": true
+  },
+  "note": "Same-seed repeatability, not independent-seed variance."
+}
