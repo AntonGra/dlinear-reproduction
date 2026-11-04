@@ -66,14 +66,13 @@ def main():
         command.extend(["--" + key, str(value)])
     command.extend(["--root_path", str(ROOT / "data")])
     output = ROOT / "runs" / args.run_id
-    output.mkdir(exist_ok=False)
+    output.mkdir(parents=True, exist_ok=False)
     env = environment()
     metadata = {
         "upstream_commit": UPSTREAM_COMMIT, "source_hashes": sources,
         "config": config, "command": command, "cwd": str(output),
         "python": sys.version, "platform": platform.platform(), "machine": platform.machine(),
         "started_at_utc": datetime.now(timezone.utc).isoformat(),
-        "before_run_sha256": digest(ROOT / "BEFORE_RUN.md"),
         "config_sha256": digest(ROOT / "configs/etth1-336-96.json"),
         "runner_sha256": digest(Path(__file__)),
         "data_sha256": digest(ROOT / "data/ETTh1.csv"),

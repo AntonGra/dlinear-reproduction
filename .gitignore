@@ -6,10 +6,12 @@ data/
 __pycache__/
 *.pyc
 .DS_Store
-runs/*/checkpoints/
-runs/*/results/
-runs/*/test_results/
-# Published evidence is explicitly retained; new runs remain local by default.
+records/*
+!records/data-source.json
+!records/repeatability.json
 runs/*
 !runs/pilot-01/
-!runs/pilot-02/
+runs/pilot-01/*
+!runs/pilot-01/train.log
+!runs/pilot-01/environment.txt
+!runs/pilot-01/verification.json
