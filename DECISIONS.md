@@ -1,5 +1,29 @@
 # Журнал решений
 
+## 5 ноября 2026: запуск «как есть» в Colab и pre-registration
+
+Решения приняты командой.
+
+- **Где считаем.** Основные прогоны идут в Google Colab на T4. Ноутбук Антона
+  больше не используется. Контрольное сравнение окружений описано в
+  [PREREGISTRATION.md](PREREGISTRATION.md), раздел 3.
+- **Окружение Colab.** Python 3.13.16, torch 2.11.0+cu130, NumPy 2.4.6,
+  pandas 2.2.3 из образа Colab. Авторский torch 1.9.0 под этот Python не
+  ставится. Версии каждого запуска сохраняются через `pip freeze`.
+- **`np.Inf`.** В NumPy 2 его нет, а авторский `EarlyStopping` его использует.
+  Код не правим: запускаем через обёртку `compat_run.py`
+  ([notebooks/d2_asis_colab.ipynb](notebooks/d2_asis_colab.ipynb)), которая
+  перед стартом добавляет `np.Inf = np.inf`.
+- **FEDformer на ETTh1.** В `FEDformer/scripts/LongForecasting.sh` для ETTh1
+  стоит `--features S`, а Table 2 статьи multivariate. Запускаем с
+  `--features M`, остальные аргументы авторские.
+- **Логирование.** ClearML, проект «D2 DLinear», один прогон = один Task.
+- **Сиды.** 2021, 2022, 2023. В авторском коде сид зашит (`fix_seed = 2021`),
+  для основных прогонов добавим аргумент `--seed`.
+- **Результаты запуска «как есть»** (ETTh1, горизонт 96, сид 2021):
+  FEDformer MSE 0.3751, MAE 0.4147; DLinear MSE 0.3841, MAE 0.4047.
+  Подробности в [PREREGISTRATION.md](PREREGISTRATION.md), раздел 3.
+
 ## 4 ноября 2026: пробный запуск
 
 - **Исходники.** Авторский LTSF-Linear подключён как submodule по коммиту
